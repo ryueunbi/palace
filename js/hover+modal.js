@@ -1,0 +1,222 @@
+// hover
+// map01 - 광화문
+$(function(){
+    $(".kr-txt-01").mouseover(function(){
+        $(".guidemap01").css("display","none");
+    },function(){
+        $(".guidemap01-on").css("display","block");
+    });
+});
+$(function(){
+    $(".kr-txt-01").mouseleave(function(){
+        $(".guidemap01").css("display","block");
+    },function(){
+        $(".guidemap01-on").css("display","none");
+    });
+});
+// map02 - 근정전
+$(function(){
+    $(".kr-txt-02").mouseover(function(){
+        $(".guidemap02").css("display","none");
+    },function(){
+        $(".guidemap02-on").css("display","block");
+    });
+});
+$(function(){
+    $(".kr-txt-02").mouseleave(function(){
+        $(".guidemap02").css("display","block");
+    },function(){
+        $(".guidemap02-on").css("display","none");
+    });
+});
+// map03 - 사정전
+$(function(){
+    $(".kr-txt-03").mouseover(function(){
+        $(".guidemap03").css("display","none");
+    },function(){
+        $(".guidemap03-on").css("display","block");
+    });
+});
+$(function(){
+    $(".kr-txt-03").mouseleave(function(){
+        $(".guidemap03").css("display","block");
+    },function(){
+        $(".guidemap03-on").css("display","none");
+    });
+});
+// map04 - 강녕전
+$(function(){
+    $(".kr-txt-04").mouseover(function(){
+        $(".guidemap04").css("display","none");
+    },function(){
+        $(".guidemap04-on").css("display","block");
+    });
+});
+$(function(){
+    $(".kr-txt-04").mouseleave(function(){
+        $(".guidemap04").css("display","block");
+    },function(){
+        $(".guidemap04-on").css("display","none");
+    });
+});
+// map05 - 교태전
+$(function(){
+    $(".kr-txt-05").mouseover(function(){
+        $(".guidemap05").css("display","none");
+    },function(){
+        $(".guidemap05-on").css("display","block");
+    });
+});
+$(function(){
+    $(".kr-txt-05").mouseleave(function(){
+        $(".guidemap05").css("display","block");
+    },function(){
+        $(".guidemap05-on").css("display","none");
+    });
+});
+// map06 - 자경전
+$(function(){
+    $(".kr-txt-06").mouseover(function(){
+        $(".guidemap06").css("display","none");
+    },function(){
+        $(".guidemap06-on").css("display","block");
+    });
+});
+$(function(){
+    $(".kr-txt-06").mouseleave(function(){
+        $(".guidemap06").css("display","block");
+    },function(){
+        $(".guidemap06-on").css("display","none");
+    });
+});
+// map07 - 동궁
+$(function(){
+    $(".kr-txt-07").mouseover(function(){
+        $(".guidemap07").css("display","none");
+    },function(){
+        $(".guidemap07-on").css("display","block");
+    });
+});
+$(function(){
+    $(".kr-txt-07").mouseleave(function(){
+        $(".guidemap07").css("display","block");
+    },function(){
+        $(".guidemap07-on").css("display","none");
+    });
+});
+// map08 - 향원전
+$(function(){
+    $(".kr-txt-08").mouseover(function(){
+        $(".guidemap08").css("display","none");
+    },function(){
+        $(".guidemap08-on").css("display","block");
+    });
+});
+$(function(){
+    $(".kr-txt-08").mouseleave(function(){
+        $(".guidemap08").css("display","block");
+    },function(){
+        $(".guidemap08-on").css("display","none");
+    });
+});
+// map09 - 건청궁
+$(function(){
+    $(".kr-txt-09").mouseover(function(){
+        $(".guidemap09").css("display","none");
+    },function(){
+        $(".guidemap09-on").css("display","block");
+    });
+});
+$(function(){
+    $(".kr-txt-09").mouseleave(function(){
+        $(".guidemap09").css("display","block");
+    },function(){
+        $(".guidemap09-on").css("display","none");
+    });
+});
+// map10 - 집옥재
+$(function(){
+    $(".kr-txt-10").mouseover(function(){
+        $(".guidemap10").css("display","none");
+    },function(){
+        $(".guidemap10-on").css("display","block");
+    });
+});
+$(function(){
+    $(".kr-txt-10").mouseleave(function(){
+        $(".guidemap10").css("display","block");
+    },function(){
+        $(".guidemap10-on").css("display","none");
+    });
+});
+// map11 - 태원전
+$(function(){
+    $(".kr-txt-11").mouseover(function(){
+        $(".guidemap11").css("display","none");
+    },function(){
+        $(".guidemap11-on").css("display","block");
+    });
+});
+$(function(){
+    $(".kr-txt-11").mouseleave(function(){
+        $(".guidemap11").css("display","block");
+    },function(){
+        $(".guidemap11-on").css("display","none");
+    });
+});
+// map12 - 경회루
+$(function(){
+    $(".kr-txt-12").mouseover(function(){
+        $(".guidemap12").css("display","none");
+    },function(){
+        $(".guidemap12-on").css("display","block");
+    });
+});
+$(function(){
+    $(".kr-txt-12").mouseleave(function(){
+        $(".guidemap12").css("display","block");
+    },function(){
+        $(".guidemap12-on").css("display","none");
+    });
+});
+// map13 - 수정전
+$(function(){
+    $(".kr-txt-13").mouseover(function(){
+        $(".guidemap13").css("display","none");
+    },function(){
+        $(".guidemap13-on").css("display","block");
+    });
+});
+$(function(){
+    $(".kr-txt-13").mouseleave(function(){
+        $(".guidemap13").css("display","block");
+    },function(){
+        $(".guidemap13-on").css("display","none");
+    });
+});
+// map14 - 소주방
+$(function(){
+    $(".kr-txt-14").mouseover(function(){
+        $(".guidemap14").css("display","none");
+    },function(){
+        $(".guidemap14-on").css("display","block");
+    });
+});
+$(function(){
+    $(".kr-txt-14").mouseleave(function(){
+        $(".guidemap14").css("display","block");
+    },function(){
+        $(".guidemap14-on").css("display","none");
+    });
+});
+// hover end
+
+// modal
+$(function(){
+    $(".mapbtn01").click(function(){
+        $(".modal").css("display","block");
+    });
+    $(".close-btn").click(function(){
+        $(".modal").css("display","none");
+    });
+});
