@@ -35,13 +35,8 @@ html, body{
     clear: both;
 }
 .f-c-y{
-    color: rgb(225, 202, 87);
-}
-.align-justify{
     font-family: 'Noto Sans KR';
-    font-weight: 300;
+    font-weight: 200;
     font-size: 1.5rem;
-    text-align: justify;
-    line-height: 49px;
-    color: #383838;
+    color: rgb(225, 202, 87);
 }
