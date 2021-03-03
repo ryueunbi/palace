@@ -124,6 +124,8 @@ input[id="menuicon"]:checked+label span:nth-child(3){
 input[id="menuicon"]:checked+label+div{
     left: 0;
 }
+
+
 /* section 01 */
 .section01{
     position: relative;
@@ -136,6 +138,7 @@ nav{
     position: fixed;
     z-index: 10;
     float: right;
+    transition: all .3s;
 }
 .logo_k{
     padding-left: 20px;
@@ -578,7 +581,7 @@ nav{
         font-size: 1rem;
         text-align: justify;
         line-height: 25px;
-        margin: 0 5% 15% 5%;
+        margin: 0 0 15% 5%;
     }
     .detail-text{
         width: 90%;
