@@ -22,9 +22,6 @@
     letter-spacing: -2px;
     color: #fff;
 }
-.cn{
-    font-family: 'ChosunGu';
-}
 .en{
     font-family: 'Noto Sans KR';
     font-weight: 200;
@@ -35,8 +32,9 @@
 .h-button{
     top: 5%;
     right: 6%;
-    position: absolute;
+    position: fixed;
     display: none;
+    z-index: 999;
 }
 input[id="menuicon"]{
     display: none;
@@ -86,7 +84,7 @@ input[id="menuicon"]:checked+label span:nth-child(3){
 .sidebar{
     display: none;
     width: 100%;
-    height: 100vh;
+    height: 100%;
     background: #fff;
     position: fixed;
     top: 0px;
@@ -95,37 +93,33 @@ input[id="menuicon"]:checked+label span:nth-child(3){
     transition: all .35s;
 }
 .sidebar-logo{
-    width: 30%;
-    margin: 5% 0 0 5%;
+    width: 100%;
+    border-bottom: 1px solid rgba(1, 1, 1, 0.2);
 }
 .sidebar-logo img{
-    width: 70%;
+    width: 20%;
+    margin: 5% 0 0 5%;
 }
 .side-menu{
+	position: absolute;
+    top: 40%;
+    left: 30%;
+    transform: translate(-50%, -50%);
+    margin-left: 70px;
+}
+.side-menu>li{
+    margin: 20px 0;
+    text-align: left;
+}
+.side-menu>li>a{
     font-family: 'EBSHMJESaeronRA';
     font-weight: 400;
-    font-size: 1.13rem;
-    /* text-align: center; */
-    color: #111;
-	position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-}
-.side-menu li{
-    margin: 13px 0;
-    text-align: left;
+    font-size: 1.55rem;
+    color: #888;
 }
 input[id="menuicon"]:checked+label+div{
     left: 0;
 }
-/* 메뉴 구분선 */
-.garo{
-    border: 1px solid rgba(1, 1, 1, 0.2);
-    border-width: 1px 0 0;
-    margin-left: -100px;
-}
-
 
 /* section 01 */
 .section01{
@@ -142,11 +136,11 @@ nav{
     transition: all .3s;
 }
 .logo_k{
-    padding: 20px 0 0 30px;
+    padding: 10px 0 0 30px;
     float: left;
 }
 .logo_k img{
-    width: 70%;
+    width: 60%;
 }
 .logo_w{
     display: none;
@@ -218,17 +212,17 @@ nav{
     float: left;
 }
 .sec02-detail{
-    width: 40%;    
+    width: 40%;
+    margin: 2% 2% 0 3%;
+}
+.detail-text{
+    width: 90%;
     font-family: 'Noto Sans KR';
     font-weight: 300;
     font-size: 1.5rem;
     text-align: justify;
     line-height: 60px;
     color: #111;
-    margin: 5% 2% 0 3%;
-}
-.detail-text{
-    width: 90%;
 }
 .sec02-img{
     width: 50%;
@@ -509,7 +503,7 @@ nav{
 
 
 
-@media(max-width: 376px){
+@media(max-width: 375px){
     /* section 01 */
     nav{
         width: 100%;
@@ -545,8 +539,8 @@ nav{
         font-size: 2.5rem;
     }
     .kr{
-        font-size: 1.25rem;
-        letter-spacing: -1px;
+        font-size: 1.12rem;
+        letter-spacing: -1.5px;
     }
     .en{
         font-weight: 200;
