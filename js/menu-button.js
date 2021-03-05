@@ -7,4 +7,9 @@ $(function(){
       $('nav').css("display","block");
       $('.nav-responsive').css("display","none");
   });
+  $('.menu-detail-responsive>li>a').click(function(){
+    $('nav').css("display","block");
+    $('.nav-responsive').css("display","none");
+  });
 });
+

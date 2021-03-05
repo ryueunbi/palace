@@ -49,11 +49,11 @@ nav{
     content: "";
     margin-top: 4px;
 }
-/* responsive */
+/* responsive menu */
 .nav-responsive{
-    width: 100%;
+    width: 75%;
     height: 100%;
-    background-color: rgba(255, 255, 255, 1);
+    background-color: rgba(255, 255, 255, 0.95);
     display: none;
 }
 .logo-responsive{
@@ -65,13 +65,16 @@ nav{
 .logo_w-responsive{
     display: none;
 }
+.menu-detail-responsive{
+    margin: 30% 0 0 10%;
+}
 .menu-detail-responsive li{
-    margin: 15% 0 5% 10%;
+    margin-top: 10%;
 }
 .menu-detail-responsive li a{
     font-family: 'EBSHMJESaeronRA';
     font-weight: normal;
-    font-size: 1.5rem;
+    font-size: 1.25rem;
     color: #111;
 }
 .menu-detail-responsive li a:hover{
@@ -140,6 +143,10 @@ nav{
     background: url('../images/img4.jpg') no-repeat center;
     background-size: cover;
 }
+.sec02-container{
+    width: 80%;
+    margin: 0 auto;
+}
 .sec02-txt{
     text-align: center;
     padding: 6% 0 6% 0;
@@ -155,20 +162,19 @@ nav{
 }
 .sec02-detail{
     width: 40%;
-    margin: 2% 2% 0 3%;
+    /* margin: 2% 2% 0 3%; */
 }
 .detail-text{
-    width: 90%;
     font-family: 'Noto Sans KR';
     font-weight: 300;
-    font-size: 1.5rem;
+    font-size: 1.4rem;
+    line-height: 50px;
     text-align: justify;
-    line-height: 60px;
-    color: #111;
+    /* margin-right: 5%; */
 }
 .sec02-img{
     width: 50%;
-    margin: 0 1.5%;
+    margin-left: 5%;
     padding-bottom: 10%;
 }
 .sec02-img>img{
@@ -181,13 +187,12 @@ nav{
     width: 40%;
     margin: 2% 2% 0 3%;
 }
+/* responsive detail text */
 .detail-text-2{
-    width: 90%;
     font-family: 'Noto Sans KR';
     font-weight: 300;
-    font-size: 1.5rem;
     text-align: justify;
-    line-height: 60px;
+    line-height: 30px;
     color: #111;
     display: none;
 }
@@ -471,7 +476,7 @@ nav{
     .logo_w{
         display: block;
         float: left;
-        padding: 7% 0 0 7%;
+        padding: 7% 0 0 10%;
     }
     .logo_w img{
         width: 60%;
@@ -483,7 +488,7 @@ nav{
     .logo_k-responsive{
         display: block;
         float: left;
-        padding: 7% 0 0 7%;
+        padding: 7% 0 0 10%;
     }
     .logo_k-responsive img{
         width: 60%;
@@ -536,18 +541,13 @@ nav{
         display: none;
     }
     .sec02-detail-2{
-        width: 90%;
-        margin: 5% 0 0 3%;
+        width: 100%;
+        margin: 0;
     }
     .detail-text-2{
-        width: 100%;
-        font-family: 'Noto Sans KR';
-        font-weight: 300;
-        font-size: 1rem;
-        text-align: justify;
-        line-height: 30px;
-        color: #111;
         display: block;
+        padding-top: 5%;
+        padding-bottom: 15%;
     }
 
 }
