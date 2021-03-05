@@ -15,36 +15,30 @@ nav{
     position: fixed;
     padding: 5px 0 0 30px;
 }
-.nav-responsive{
-    width: 100%;
-    height: 100%;
-    background-color: #fff;
-    display: none;
-}
-.logo, .logo-responsive{
+.logo{
     float: left;
 }
-.logo img, .logo-responsive img{
+.logo img{
     width: 60%;
 }
 .logo_w{
     display: none;
 }
-.menus, .menus-responsive{
+.menus{
     float: right;
     padding: 24px 40px;
 }
-.menu-detail li, .menu-detail-responsive li{
+.menu-detail li{
     float: left;
 }
-.menu-detail li a, .menu-detail-responsive li a{
+.menu-detail li a{
     font-family: 'EBSHMJESaeronRA';
     font-weight: normal;
     font-size: 1.125rem;
     color: #111;
     padding: 2px 20px;
 }
-.menu-detail li a:hover, .menu-detail-responsive li a:hover{
+.menu-detail li a:hover{
     color: #f1d6a3;
 }
 .menu-detail>li+li:before{
@@ -54,6 +48,34 @@ nav{
     position: absolute;
     content: "";
     margin-top: 4px;
+}
+/* responsive */
+.nav-responsive{
+    width: 100%;
+    height: 100%;
+    background-color: rgba(255, 255, 255, 1);
+    display: none;
+}
+.logo-responsive{
+    float: left;
+}
+.logo-responsive img{
+    width: 60%;
+}
+.logo_w-responsive{
+    display: none;
+}
+.menu-detail-responsive li{
+    margin: 15% 0 5% 10%;
+}
+.menu-detail-responsive li a{
+    font-family: 'EBSHMJESaeronRA';
+    font-weight: normal;
+    font-size: 1.5rem;
+    color: #111;
+}
+.menu-detail-responsive li a:hover{
+    color: #f1d6a3;
 }
 /* hamburger button */
 .hamburger-button{
@@ -436,7 +458,7 @@ nav{
 
 
 
-@media(max-width: 376px){
+@media(max-width: 769px){
     /* section 01 */
     nav{
         border: none;
@@ -457,9 +479,29 @@ nav{
     .menus{
         display: none;
     }
+    /* responsive */
+    .logo_k-responsive{
+        display: block;
+        float: left;
+        padding: 7% 0 0 7%;
+    }
+    .logo_k-responsive img{
+        width: 60%;
+    }
+    .menus-responsive{
+        float: none;
+        padding: 0;
+    }
+    .menu-detail-responsive li{
+        float: none;
+    }
+    /* hamburger-button */
     .hamburger-button{
         padding: 23px 15px;
         display: block;
+    }
+    .hamburger-close-button{
+        padding: 23px 15px;
     }
     .slide-txt>h1{
         font-size: 2.5rem;

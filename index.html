@@ -10,31 +10,31 @@
     <!-- xeicon -->
     <link rel="stylesheet" href="http://cdn.jsdelivr.net/npm/xeicon@2.3.3/xeicon.min.css">
     <!-- favicon -->
-    <link rel="shortcut icon" href="images/favicon.png" type="image/x-icon">
+    <link rel="shortcut icon" href="images/logo.png" type="image/x-icon">
     <link rel="icon" href="images/favicon.ico" type="image/x-icon">
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
     <!-- section 01 -->
-    <div class="section01">
+    <div class="section01" id="sec01">
         <nav>
             <!-- logo -->
             <div class="logo">
-                <a href="#">
+                <a href="#sec01">
                     <img src="images/logo_k.png" class="logo_k" alt="logo">
                 </a>
-                <a href="#">
+                <a href="#sec01">
                     <img src="images/logo_w.png" class="logo_w" alt="logo">
                 </a>
             </div>
             <!-- menu -->
             <div class="menus">
                 <ul class="menu-detail">
-                    <li><a href="#">경복궁역사</a></li>
-                    <li><a href="#">관람코스</a></li>
-                    <li><a href="#">관람안내</a></li>
-                    <li><a href="#">행사</a></li>
-                    <li><a href="#">오시는길</a></li>
+                    <li><a href="#sec02">경복궁역사</a></li>
+                    <li><a href="#sec03">관람코스</a></li>
+                    <li><a href="#sec04">관람안내</a></li>
+                    <li><a href="#sec05">행사</a></li>
+                    <li><a href="#sec06">오시는길</a></li>
                 </ul>
             </div>
             <div class="hamburger-button">
@@ -47,27 +47,30 @@
         <nav class="nav-responsive">
             <!-- logo -->
             <div class="logo-responsive">
-                <a href="#">
+                <a href="#sec01">
                     <img src="images/logo_k.png" class="logo_k-responsive" alt="logo">
-                </a>
-                <a href="#">
-                    <img src="images/logo_w.png" class="logo_w-responsive" alt="logo">
                 </a>
             </div>
             <!-- menu -->
             <div class="menus-responsive">
+                <div class="hamburger-close-button">
+                    <a href="#" onclick="return false;">
+                        <i class="xi-close-min xi-2x"></i>
+                    </a>
+                </div>
+                <div class="clearfix"></div>
                 <ul class="menu-detail-responsive">
                     <li><a href="#">경복궁역사</a></li>
+                    <hr width="300px">
                     <li><a href="#">관람코스</a></li>
+                    <hr width="300px">
                     <li><a href="#">관람안내</a></li>
+                    <hr width="300px">
                     <li><a href="#">행사</a></li>
+                    <hr width="300px">
                     <li><a href="#">오시는길</a></li>
+                    <hr width="300px">
                 </ul>
-            </div>
-            <div class="hamburger-close-button">
-                <a href="#" onclick="return false;">
-                    <i class="xi-close-min xi-2x"></i>
-                </a>
             </div>
         </nav>
         <!-- navbar end -->
@@ -90,7 +93,7 @@
     <!-- section 01 end -->
 
     <!-- section 02 -->
-    <div class="section02">
+    <div class="section02" id="sec02">
         <div class="sec02-txt">
             <h1>경복궁의 역사</h1>
             <p class="f-c-y">
@@ -117,7 +120,7 @@
     <!-- section 02 end -->
     
     <!-- section 03 -->
-    <div class="section03">
+    <div class="section03" id="sec03">
         <div class="sec03-bg">
             <img src="images/map.png" alt="지도틀" class="guidemap01">
             <img src="images/map01.png" alt="광화문" class="guidemap01-on">
