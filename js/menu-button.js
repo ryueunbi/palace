@@ -1,10 +1,10 @@
-var burger = $('.menu-trigger');
-
-burger.each(function(index){
-  var $this = $(this);
-  
-  $this.on('click', function(e){
-    e.preventDefault();
-    $(this).toggleClass('active-' + (index+1));
-  })
+$(function(){
+  $('.hamburger-button').click(function(){
+      $('nav').css("display","none");
+      $('.nav-responsive').css("display","block");
+  });
+  $('.hamburger-close-button').click(function(){
+      $('nav').css("display","block");
+      $('.nav-responsive').css("display","none");
+  });
 });

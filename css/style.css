@@ -2,153 +2,68 @@
 /* reset css */
 
 
-/* hamburger button */
-.h-button{
-    top: 5%;
-    right: 6%;
-    position: fixed;
-    display: none;
-    z-index: 999;
-}
-input[id="menuicon"]{
-    display: none;
-}
-input[id="menuicon"]+label{
-    display: block;
-    width: 25px;
-    height: 20px;
-    position: relative;
-    cursor: pointer;
-    z-index: 99;
-}
-input[id="menuicon"]+label span{
-    display: block;
-    position: absolute;
-    width: 100%;
-    height: 3px;
-    border-radius: 100px;
-    background: #fff;
-    transition: all .35s;
-}
-input[id="menuicon"]+label span:nth-child(1){
-    top: 0;
-}
-input[id="menuicon"]+label span:nth-child(2){
-    top: 50%;
-    transform: translateY(-50%);
-}
-input[id="menuicon"]+label span:nth-child(3){
-    bottom: 0;
-}
-/* click - X button */
-input[id="menuicon"]:checked+label span:nth-child(1){
-    top: 50%;
-    transform: translateY(-50%) rotate(45deg);
-    background-color: #111;
-}
-input[id="menuicon"]:checked+label span:nth-child(2){
-    opacity: 0;
-}
-input[id="menuicon"]:checked+label span:nth-child(3){
-    bottom: 50%;
-    transform: translateY(50%) rotate(-45deg);
-    background-color: #111;
-}
-/* sidebar */
-.sidebar{
-    display: none;
-    width: 100%;
-    height: 100%;
-    background: #fff;
-    position: fixed;
-    top: 0px;
-    left: -500px;
-    z-index: 10;
-    transition: all .35s;
-}
-.sidebar-logo{
-    width: 100%;
-    border-bottom: 1px solid rgba(1, 1, 1, 0.2);
-}
-.sidebar-logo img{
-    width: 20%;
-    margin: 5% 0 0 5%;
-}
-.side-menu{
-	position: absolute;
-    top: 40%;
-    left: 30%;
-    transform: translate(-50%, -50%);
-    margin-left: 70px;
-}
-.side-menu>li{
-    margin: 20px 0;
-    text-align: left;
-}
-.side-menu>li>a{
-    font-family: 'EBSHMJESaeronRA';
-    font-weight: 400;
-    font-size: 1.55rem;
-    color: #888;
-}
-input[id="menuicon"]:checked+label+div{
-    left: 0;
-}
-
 /* section 01 */
 .section01{
     position: relative;
 }
 nav{
     width: 100%;
-    height: 80px;
     background-color: #fff;
     border-bottom: 1px solid #eee;
-    position: fixed;
-    z-index: 10;
-    float: right;
     transition: all .3s;
+    z-index: 99;
+    position: fixed;
+    padding: 5px 0 0 30px;
+}
+.nav-responsive{
+    width: 100%;
+    height: 100%;
+    background-color: #fff;
     display: none;
 }
-.responsive{
-    
-}
-.logo_k{
-    padding: 10px 0 0 30px;
+.logo, .logo-responsive{
     float: left;
 }
-.logo_k img{
+.logo img, .logo-responsive img{
     width: 60%;
 }
 .logo_w{
     display: none;
 }
-.menus{
+.menus, .menus-responsive{
     float: right;
-}
-.menus-content{
     padding: 24px 40px;
 }
-.menus-content li{
-    padding: 2px 20px;
+.menu-detail li, .menu-detail-responsive li{
     float: left;
 }
-.menus-content li a{
+.menu-detail li a, .menu-detail-responsive li a{
     font-family: 'EBSHMJESaeronRA';
+    font-weight: normal;
     font-size: 1.125rem;
     color: #111;
+    padding: 2px 20px;
 }
-.menus-content li a:hover{
-    color: rgb(225, 202, 87);
+.menu-detail li a:hover, .menu-detail-responsive li a:hover{
+    color: #f1d6a3;
 }
-/* 메뉴 구분선 */
-.menus-content>li+li:before{
+.menu-detail>li+li:before{
     width: 1px;
-    height: 20px;
+    height: 17px;
     background-color: #eee;
     position: absolute;
     content: "";
-    margin: 4px -17px;
+    margin-top: 4px;
+}
+/* hamburger button */
+.hamburger-button{
+    float: right;
+    color: #fff;
+    display: none;
+}
+.hamburger-close-button{
+    float: right;
+    color: #111;
 }
 /* bxslider */
 .bg01, .bg02, .bg03{
@@ -526,6 +441,7 @@ nav{
     nav{
         border: none;
         background-color: transparent;
+        padding: 0;
     }
     .logo_k{
         display: none;
@@ -533,18 +449,16 @@ nav{
     .logo_w{
         display: block;
         float: left;
-        padding: 20px 0 0 20px;
+        padding: 7% 0 0 7%;
     }
     .logo_w img{
         width: 60%;
     }
-    .h-button{
-        display: block;
-    }
     .menus{
         display: none;
     }
-    .sidebar{
+    .hamburger-button{
+        padding: 23px 15px;
         display: block;
     }
     .slide-txt>h1{

@@ -7,63 +7,71 @@
     <title>문화재청 경복궁</title>
     <!-- bxslider -->
     <link rel="stylesheet" href="css/jquery.bxslider.css">
-    <!-- aos -->
-    <script src="js/aos.js"></script>
-    <link rel="stylesheet" href="css/aos.css">
     <!-- xeicon -->
     <link rel="stylesheet" href="http://cdn.jsdelivr.net/npm/xeicon@2.3.3/xeicon.min.css">
+    <!-- favicon -->
+    <link rel="shortcut icon" href="images/favicon.png" type="image/x-icon">
+    <link rel="icon" href="images/favicon.ico" type="image/x-icon">
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
     <!-- section 01 -->
-    <div class="section01">               
-        <!-- menus -->
+    <div class="section01">
         <nav>
-            <div class="logo_k">
+            <!-- logo -->
+            <div class="logo">
                 <a href="#">
-                    <img src="images/logo_k.png" alt="logo">
+                    <img src="images/logo_k.png" class="logo_k" alt="logo">
+                </a>
+                <a href="#">
+                    <img src="images/logo_w.png" class="logo_w" alt="logo">
                 </a>
             </div>
-            <div class="logo_w">
-                <a href="#">
-                    <img src="images/logo_w.png" alt="logo">
-                </a>
-            </div>
+            <!-- menu -->
             <div class="menus">
-                <ul class="menus-content">
+                <ul class="menu-detail">
                     <li><a href="#">경복궁역사</a></li>
                     <li><a href="#">관람코스</a></li>
                     <li><a href="#">관람안내</a></li>
                     <li><a href="#">행사</a></li>
                     <li><a href="#">오시는길</a></li>
                 </ul>
-            </div>            
+            </div>
+            <div class="hamburger-button">
+                <a href="#" onclick="return false;">
+                    <i class="xi-bars xi-2x"></i>
+                </a>
+            </div>
         </nav>
-        <!-- menu -->
-        <nav>
-            <div class="logo_k_r">
+        <!-- responsive nav -->
+        <nav class="nav-responsive">
+            <!-- logo -->
+            <div class="logo-responsive">
                 <a href="#">
-                    <img src="images/logo_k.png" alt="logo">
+                    <img src="images/logo_k.png" class="logo_k-responsive" alt="logo">
+                </a>
+                <a href="#">
+                    <img src="images/logo_w.png" class="logo_w-responsive" alt="logo">
                 </a>
             </div>
-            <div class="logo_w_r">
-                <a href="#">
-                    <img src="images/logo_w.png" alt="logo">
-                </a>
-            </div>
-            <div class="menus_r">
-                <ul class="menus-content_r">
+            <!-- menu -->
+            <div class="menus-responsive">
+                <ul class="menu-detail-responsive">
                     <li><a href="#">경복궁역사</a></li>
                     <li><a href="#">관람코스</a></li>
                     <li><a href="#">관람안내</a></li>
                     <li><a href="#">행사</a></li>
                     <li><a href="#">오시는길</a></li>
                 </ul>
-            </div>            
+            </div>
+            <div class="hamburger-close-button">
+                <a href="#" onclick="return false;">
+                    <i class="xi-close-min xi-2x"></i>
+                </a>
+            </div>
         </nav>
-
+        <!-- navbar end -->
         <div class="clearfix"></div>
-        <!-- menus end -->
 
         <!-- bxslider -->
         <div class="bxslider">
@@ -71,49 +79,15 @@
             <div class="bg02"></div>
             <div class="bg03"></div>
         </div>
-
         <!-- slide text -->
         <div class="slide-txt">
             <h1>경복궁</h1>
-            <p class="kr">
-                조선 왕조 제일의 법궁(法宮)
-            </p>
+            <p class="kr">조선 왕조 제일의 법궁(法宮)</p>
             <p class="en">gyeongbokgung palace</p>
         </div>
         <!-- bxslider end -->
     </div>
     <!-- section 01 end -->
-
-    <!-- hamburger button-->
-    <div class="h-button">
-        <input type="checkbox" id="menuicon">
-        <label for="menuicon">
-            <span></span>
-            <span></span>
-            <span></span>
-        </label>
-        <!-- sidebar -->
-        <div class="sidebar">
-            <div class="sidebar-logo">
-                <img src="images/logo_k.png" alt="logo">
-            </div>
-            <ul class="side-menu">
-                <li><a href="#">경복궁 역사</a></li>
-                <hr width="340px" align="left">
-                <li><a href="#">관람 코스</a></li>
-                <hr width="340px" align="left">
-                <li><a href="#">관람 안내</a></li>
-                <hr width="340px" align="left">
-                <li><a href="#">행사</a></li>
-                <hr width="340px" align="left">
-                <li><a href="#">오시는 길</a></li>
-                <hr width="340px" align="left">
-            </ul>
-        </div>
-    </div>
-    <!-- hamburger button end -->
-
-    
 
     <!-- section 02 -->
     <div class="section02">
@@ -143,7 +117,7 @@
     <!-- section 02 end -->
     
     <!-- section 03 -->
-    <!-- <div class="section03">
+    <div class="section03">
         <div class="sec03-bg">
             <img src="images/map.png" alt="지도틀" class="guidemap01">
             <img src="images/map01.png" alt="광화문" class="guidemap01-on">
@@ -274,7 +248,7 @@
             </div>
         </div>
     </div>
-    <div class="clearfix"></div> -->
+    <div class="clearfix"></div>
     <!-- section 03 end -->
 
 
@@ -294,10 +268,7 @@
     <!-- scroll -->
     <script src="js/jquery-latest.min.js"></script>
     <script src="js/scroll.js"></script>
-
-    <script>
-        AOS.init();
-    </script>
+    <script src="js/menu-button.js"></script>
     <!-- script end -->
 </body>
 </html>
